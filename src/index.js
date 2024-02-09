@@ -40,7 +40,7 @@ function onDocumentMouseMove(event) {
 window.addEventListener( 'resize', onWindowResize );
 
 const loader = new ColladaLoader();
-loader.load('./assets/LogoFilm.dae', function(gltf) {
+loader.load('./LogoFilm.dae', function(gltf) {
     gltf.scene.traverse(function (child) {
         if (child.isMesh) {
             child.castShadow = true;
