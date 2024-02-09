@@ -6,6 +6,6 @@
     "three": "^0.161.0"
   },
   "scripts": {
-    "build": "rm -rf ../assets; rm ../index.html; npx vite build --outDir .."
+    "build": "npx vite build && cp assets/* dist/assets/"
   }
 }
