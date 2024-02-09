@@ -40,7 +40,7 @@ function onDocumentMouseMove(event) {
 window.addEventListener( 'resize', onWindowResize );
 
 const loader = new ColladaLoader();
-loader.load('./LogoFilm.dae', function(gltf) {
+loader.load('assets/LogoFilm.dae', function(gltf) {
     gltf.scene.traverse(function (child) {
         if (child.isMesh) {
             child.castShadow = true;
@@ -62,7 +62,7 @@ loader.load('./LogoFilm.dae', function(gltf) {
     function animate() {
         requestAnimationFrame(animate);
         model.rotation.y = mouse.x
-        model.rotation.x = mouse.y
+        model.rotation.x = -mouse.y
         renderer.render(scene, camera);
     }
     animate();

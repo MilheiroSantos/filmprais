@@ -6,6 +6,6 @@
     "three": "^0.161.0"
   },
   "scripts": {
-    "build": "npx vite build && cp assets/* dist/"
+    "build": "npx vite build && cp assets/* dist/assets/"
   }
 }
